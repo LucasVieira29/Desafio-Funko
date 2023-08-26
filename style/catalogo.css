@@ -1,0 +1,88 @@
+header {
+    width: 100%;
+    height: 1000px;
+    background-image: url("../imagens_atualizadas/captainmarvelheader.jpg");
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont-banner {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.titulo-capmarvel {
+    width: 500px;
+}
+
+
+
+/******** CATÁLOGO ***************/
+
+button {
+    font-weight: 900;
+    font-size: 1.3em;
+    padding: 3% 7%;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, #fe7467, #fc3836 );
+    border: 0;
+    color: white;
+    margin-top: 20px;
+    }
+
+    
+    .cont-catalogo {
+        padding: 40px;
+        width: 100%;
+    }
+    
+    .cont-catalogo h1 {
+        text-align: center;
+        letter-spacing: 2px;
+        font-size: 2.3em;
+        width: 100%;
+        text-decoration: underline #fe7467 solid 4px;
+    }
+
+.catalogo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.funko {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 450px;
+    margin: 40px;
+}
+
+.cont-catalogo img{
+    width: 100%;
+}
+
+.descricao-funko {
+    font-size: 1.3em;
+}
+
+.preco {
+    font-style: italic;
+    font-weight: 600;
+    font-size: 1.3em;
+}
+
+@media (max-width: 1000px) {
+    header {
+        background-image: url(../imagens_atualizadas/captainmarvelheader_Mobile.jpg);
+    }
+
+    .cont-banner {
+        display: none
+    }
+}

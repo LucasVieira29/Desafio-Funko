@@ -1,0 +1,147 @@
+header {
+    width: 100%;
+    height: 1000px;
+    background-image: url("../imagens_atualizadas/spidermanheader.jpg");
+    background-size:cover;
+    background-position:center;
+    display: flex;
+    flex-direction: column;
+    background-repeat: no-repeat;
+}
+
+.cont-banner {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+}
+
+.funko-spiderman {
+    width: 400px;
+    margin-left: 40px;
+}
+
+/**************** THOR ****************/
+
+.thor {
+    width: 100%;
+    height: 900px;
+    background-image:url("../imagens_atualizadas/thor_header.jpg");
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+}
+
+.cont-thor {
+    display: flex;
+    width: 100%;
+    gap: 70px;
+    max-width: 1200px;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 50px;
+    margin-inline: 50px;
+}
+
+.cont-thor h1 {
+    color: #fff;
+    font-size: 2.3em;
+    text-decoration: underline #fff solid 4px;
+}
+
+.quem-somos {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.quem-somos p {
+    width: 500px;
+    font-size: 1.3em;
+    color: #fff;
+}
+
+/**************** CATALOGO **********************/
+    
+.cont-catalogo {
+        width: 100%;
+}
+    
+.cont-catalogo h1 {
+        text-align: center;
+        margin: 30px;
+        font-size: 2.3em;
+        text-decoration: underline #fe7467 solid 4px;
+
+}
+
+.catalogo-home {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo {
+    width: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 30px;
+    
+}
+
+.conteudo p {
+    font-size: 1.5em;
+}
+
+.conteudo img {
+    width: 100%;
+}
+
+.ver-catalogo {
+    font-weight: bolder;
+    font-size: 1.3em;
+    padding: 20px;
+    border-radius: 30px;
+    background-image: linear-gradient(to bottom, #fe7467, #fc3836 );
+    border: 0;
+    margin-top: 20px;
+    }
+
+.conteudo button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+@media (max-width: 1000px) {
+    header {
+        background-image: url(../imagens_atualizadas/spidermanheader_mobile.jpg);
+    }
+
+    .funko-spiderman {
+        width: 300px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .cont-banner {
+        align-items: end;
+    }
+
+    .quem-somos {
+        justify-content: center;
+    }
+
+    .catalogo-home {
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+
+    .conteudo {
+        align-items: center;
+    }
+
+}
